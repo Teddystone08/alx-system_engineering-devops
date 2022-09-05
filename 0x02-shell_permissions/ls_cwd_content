@@ -1,8 +1,0 @@
-total 16
-drwxr-xr-x 2 root root 115 Sep  5 15:17 .
-drwxr-xr-x 6 root root 151 Sep  5 14:41 ..
--rwxr--r-- 1 root root  30 Sep  5 14:43 0-hello_world
--rwxr--r-- 1 root root  34 Sep  5 15:01 0x02-shell_permissions
--rwxr--r-- 1 root root  36 Sep  5 15:17 8-cwd_state
--rw-r--r-- 1 root root   0 Sep  5 15:18 ls_cwd_content
--rw-r--r-- 1 root root  12 Sep  5 10:06 README.md
