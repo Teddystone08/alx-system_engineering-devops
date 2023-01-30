@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
+
 #script displays current running processes
 #Shows all processes including those without TTY
 #shows process hierarchy
+#display user-oreiented format
 
-ps -ef --forest
+ps -a -u -x -f
