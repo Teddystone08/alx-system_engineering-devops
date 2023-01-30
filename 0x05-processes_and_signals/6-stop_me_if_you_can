@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Script stops infinity and beyond process
+#not allowed to use Kill or killall
+
+pkill -f beyond
