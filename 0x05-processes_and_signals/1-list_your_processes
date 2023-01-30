@@ -5,4 +5,4 @@
 #shows process hierarchy
 #display user-oreiented format
 
-ps -a -u -x -f
+ps -a -x -u -f
