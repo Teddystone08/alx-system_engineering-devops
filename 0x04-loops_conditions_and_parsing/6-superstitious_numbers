@@ -17,5 +17,5 @@ case $count in
 *) echo "$count"
  ;;
 esac
-((counter++))
+((count++))
 done
