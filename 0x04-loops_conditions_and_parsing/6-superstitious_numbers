@@ -1,24 +1,21 @@
 #!/usr/bin/env bash
-#Script that displays from 1-20
-#Displays 4 then "bad luck from China for 4th iteration
-#Displays 9 then "bad luck from Japan for 9th iteration
-#Displays 17 then "bad luck from Italy for 17th iteration
+#Script that displays from 1-20 with a conditional formatting
 
 count=1
 while [ $count -le 20 ]
 do
-	case $count in
-		4) echo "4"
-		   echo "bad luck form Chine"
-		   ;;
-		9) echo "9"
-		   echo "bad luck from Japan"
-		   ;;
-		17) echo "17"
-		    echo "bad from Italy"
-		   ;;
-		*) echo "$count"
-		   ;;
-		esac
-		((counter++))
+case $count in
+4) echo "4"
+ echo "bad luck form Chine"
+ ;;
+9) echo "9"
+ echo "bad luck from Japan"
+ ;;
+7) echo "17"
+ echo "bad from Italy"
+ ;;
+*) echo "$count"
+ ;;
+esac
+((counter++))
 done
