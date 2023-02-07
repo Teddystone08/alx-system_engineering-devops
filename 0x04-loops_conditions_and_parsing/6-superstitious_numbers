@@ -14,7 +14,7 @@ case $count in
 7) echo "17"
  echo "bad from Italy"
  ;;
-*) echo "$count"
+*) echo $count
  ;;
 esac
 ((count++))
