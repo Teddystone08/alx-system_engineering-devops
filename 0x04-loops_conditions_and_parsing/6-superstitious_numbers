@@ -2,19 +2,16 @@
 #Script that displays from 1-20 with a conditional formatting
 
 count=1
-while [ $count -le 20 ]
+while [ $count -lt 21 ]
 do
 	echo $count
-case $count in
-4) echo "4"
- echo "bad luck form Chine"
- ;;
-9) echo "9"
- echo "bad luck from Japan"
- ;;
-7) echo "17"
- echo "bad from Italy"
- ;;
-esac
-((count++))
+    	case $count in
+	4) echo bad luck from China
+	    ;;
+	9) echo bad luck from Japan
+	    ;;
+	17) echo bad luck from Italy
+	    ;;
+    esac
+    count=$((count + 1))
 done
