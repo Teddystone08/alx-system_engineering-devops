@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# with script runs the whoami as root.
+# script runs the whoami as user
+
 sudo -u "$1" whoami
