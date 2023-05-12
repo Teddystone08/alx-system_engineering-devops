@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""Advanced API module using reddit api endpoint"""
+"""API module using reddit api endpoint"""
+
 import requests
 
 
 def recurse(subreddit, count=0, after=None, hot_list=[]):
     """
-    Recursively queries the Reddit API and returns a list of all hot article
+    Queries the Reddit API and returns a list of all hot article
     titles for a given subreddit.
     """
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
