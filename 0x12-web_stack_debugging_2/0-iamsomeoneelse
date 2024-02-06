@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# script runs the whoami as user
-sudo -u "$1" whoami
