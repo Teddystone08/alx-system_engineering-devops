@@ -6,8 +6,8 @@
 #Delete file /var/run/myscript.pid and terminates when SIGQUIT or SIGTERM signa
 
 echo $$ >> /var/run/myscript.pid
-trap SIGTERM SIGINT SIGQUIT
-trap "echo 'I hate the kill command'; rm -rf /var/run/myscript.pid; exit" SIGTERM
+
+trap "echo 'I hate the kill command' /var/run/myscript.pid" SIGTERM
 trap "echo 'Y U no love me?!'" SIGINT
 trap "rm -rf /var/run/myscript.pid; exit" SIGQUIT
 
