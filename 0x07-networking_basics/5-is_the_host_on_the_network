@@ -2,13 +2,12 @@
 #pings ip address passed as argument
 # accpt a string as a argument and
 #ping the IP 5 time
- 
 
-ping -c 5 "$IP_ADDRESS"
 
-exit 1
-
-if !["$1"]; then
-	echo "Usage: 5-is_the_on_the_network: $1 {IP_ADDRESS}"
+if [-z "$1"]; then
+	echo "Usage: $0 {IP_ADDRESS}"
 	exit 1
 fi
+ping -c 5 "$ip_address"
+
+exit 1 
