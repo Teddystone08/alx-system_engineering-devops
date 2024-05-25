@@ -4,13 +4,11 @@
 #ping the IP 5 time
 
 
-if [ $# -eq 0 ]; then
-  echo "Usage: 5-is_the_on_the_network $1  {IP_ADDRESS}"
+if [-z "$1" ]; then
+  echo "Usage: 5-is_the_on_the_network:{IP_ADDRESS}"
   exit 1
 fi
 
 ping -c 5 "$ip_addreess"
 
-exit 0
-
-
+exit 1
