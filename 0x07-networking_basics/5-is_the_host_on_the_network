@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #pings ip address passed as argument
-# accpt a string as a argument and
+#accpt a string as a argument and
 #ping the IP 5 time
 
 if [ "$#" -ne 1 ]; then
