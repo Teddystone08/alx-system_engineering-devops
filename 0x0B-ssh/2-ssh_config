@@ -3,7 +3,7 @@
 
 # script to identify ssh without password
 
-Host *
-	IdentityFile ~/ .ssh/school
-	PasswordAuthentication no
-	BatchMode yes
+Host 35.153.78.119 
+IdentityFile ~/ .ssh/school
+PasswordAuthentication no
+BatchMode yes
