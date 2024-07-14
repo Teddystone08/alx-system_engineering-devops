@@ -6,7 +6,7 @@ sudo apt-get upgrade
 sudo apt-get -y install nginx
 sudo service nginx start
 sudo ufw all 'Nginx HTTP'
-sudo chown -R $USER:$USER /var/www/html
+sudo chown -R "$USER":"$USER"/var/www/html
 sudo chown -R 755 /var/www
 echo -e "Hello World" > /var/www/html/index.html
 sudo service nginx restart
