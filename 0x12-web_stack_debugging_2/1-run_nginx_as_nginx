@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
-
 # This script runs nginx as non-root user nginx
 
 # kill apache2 server
 pkill -f apache2
-# allow permission
-chmod  777 /etc/nginx/nginx.conf
 #change ownership
 chown nginx:nginx /etc/nginx/nginx.conf
+# allow permission
+chmod  777 /etc/nginx/nginx.conf
 # update ports
 sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 # restart nginx
-su -u service nginx restart
+su -u nginx service nginx restart
