@@ -5,7 +5,7 @@
 # kill apache2 server
 pkill -f apache2
 # allow permission
-chmod  644 /etc/nginx/nginx.conf
+chmod  777 /etc/nginx/nginx.conf
 #change ownership
 chown nginx:nginx /etc/nginx/nginx.conf
 # update ports
