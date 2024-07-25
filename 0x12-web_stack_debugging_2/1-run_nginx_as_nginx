@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # This script runs nginx as non-root user nginx
 
 # kill apache2 server
@@ -10,4 +11,4 @@ chown nginx:nginx /etc/nginx/nginx.conf
 # update ports
 sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 # restart nginx
-su -u service nginx reetart
+su -u service nginx restart
