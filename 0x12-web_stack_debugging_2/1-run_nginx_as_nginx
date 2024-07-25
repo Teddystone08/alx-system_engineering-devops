@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 # This script runs nginx as non-root user nginx
 
-service nginx stop
-pkill nginx
-pkill apache2
-sed -i -E 's/#user.+\;/user nginx;/' /etc/nginx/nginx.conf
-sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
-chown -R nginx:nginx /etc/nginx/ /var/run/ /var/log/nginx
-chmod +rw /etc/nginx/nginx.conf
-su -l nginx -c 'service nginx start'
+# kill apache2 server
+pkill -f apache2
+
+# allow permission
+chmod 777 /etc/nginx/nginx.conf
+
+# update ports
+sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
+
+# restart nginx
+su -u nginx service nginx reetart
