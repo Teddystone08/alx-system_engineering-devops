@@ -3,13 +3,11 @@
 
 # kill apache server
 pkill -f apache2
-
+# change ownership
 chown nginx:nginx /etc/nginx/nginx.conf
-
 # give permission
-chmod 700 /etc/nginx/nginx.conf
-
-sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
-
+chmod 644 /etc/nginx/nginx.conf
+# default port
+sed -i 's/80 default_server/8080 default_server/g' /etc/nginx/sites-available/default
 # restart nginx
-sudo service nginx start
+sudo -u nginx service nginx start
