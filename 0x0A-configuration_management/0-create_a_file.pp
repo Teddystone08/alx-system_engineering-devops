@@ -1,7 +1,7 @@
 # create file in tmp
-file {'/tmp/school':
-content => 'I love Puppet',
-owner => 'www-data',
-group => 'www-data',
-mode => '0744' 
+file {
+owner 	=> www-data,
+permission => 0744,
+group 	=> www-data,
+content => I love Puppet
 }
