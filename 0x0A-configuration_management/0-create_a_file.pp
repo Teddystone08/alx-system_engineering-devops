@@ -3,5 +3,5 @@ file {
 owner => www-data,
 permission => 0744,
 group => www-data,
-content => I love Puppet
+content => 'I love Puppet'
 }
